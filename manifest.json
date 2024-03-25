@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LineCheck",
+  "version": "1.0.0",
+  "description": "Counts the number of lines in the selected files and directories of the desired repo.",
+  "author": "Iulian Nichifor",
+  "action": {
+    "default_popup": "src/html/index.html"
+  },
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["src/js/content.js"]
+    }
+  ]
+}
